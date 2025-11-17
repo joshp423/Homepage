@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+
+.aboutMeSection {
+    background-color: #0891B2;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: ;
+}
+
+.aboutMeImageContainer {
+    height: 300px;
+    width: auto;
+    background-image: url("static/att.TljSoHLuw1gIDUxyTUTq-3rtvFAIwv9emAAwRFE_P4k.JPG");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    margin-left: 50px;
+    width: 30%;
+    color: white;
+    justify-content: center;
+}
+
+.aboutMeTextContainer {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+    width: 60%;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+}
