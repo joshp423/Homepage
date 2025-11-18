@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 40px;
     padding-top: 40px;
     margin-top: 30px;
     margin-right: 50px;
@@ -61,6 +61,7 @@ body {
     display: flex;
     gap: 20px;
     justify-content: end;
+    margin-top: 40px
 }
 
 .aboutMeLogosContainer>img {
@@ -147,4 +148,5 @@ h3 {
 
 p {
     font-weight: 300;
+    word-spacing: 3px;
 }
