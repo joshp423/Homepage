@@ -1,7 +1,7 @@
 body {
     margin: 0px;
+    font-family: Roboto, "Playfair Display", serif;
 }
-
 
 .aboutMeSection {
     display: flex;
@@ -24,12 +24,12 @@ body {
   background: #0891B2;
   left: 0;
   box-shadow: 0px 2px 2px rgb(201, 200, 200);
-  transform: skew(0, -8deg);
+  transform: skew(0, -10deg);
   transform-origin: top left;
 }
 
 .aboutMeImageContainer {
-    height: 350px;
+    height: 375px;
     width: auto;
     background-image: url("static/att.TljSoHLuw1gIDUxyTUTq-3rtvFAIwv9emAAwRFE_P4k.JPG");
     background-position: center;
@@ -40,26 +40,27 @@ body {
     width: 40%;
     color: white;
     justify-content: center;
-    box-shadow: 1px 1px 10px rgb(110, 110, 110);
+    box-shadow: 1px px 4px rgb(151, 150, 150);
 }
 
 .aboutMeTextContainer {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-top: 40px;
     margin-top: 30px;
     margin-right: 50px;
     margin-bottom: 30px;
     width: 50%;
     background-color: white;
-    box-shadow: 1px 1px 10px rgb(151, 150, 150);
+    box-shadow: 1px 1px 3px rgb(151, 150, 150);
 }
 
 .aboutMeLogosContainer { 
     display: flex;
     gap: 20px;
+    justify-content: end;
 }
 
 .aboutMeLogosContainer>img {
@@ -72,6 +73,10 @@ body {
     padding-right: 50px;
 }
 
+.myWorkSection>h2 {
+    margin-bottom: 10px;
+}
+
 .projectsSection {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -82,13 +87,29 @@ body {
 .projectDiv {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    box-shadow: 1px 1px 10px rgb(151, 150, 150);
+    box-shadow: 1px 1px 3px rgb(151, 150, 150);
     padding-bottom: 50px;
 }
 
 .projectContent {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.projectContent>p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.projectTitleLogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectLogos>img {
+    height: 18px;
+    margin-right: 10px;
 }
 
 .contactSection {
@@ -99,15 +120,31 @@ body {
     color: white;
 }
 
+.contactLogos>img {
+    height: 30px;
+    margin-right: 15px;
+}
+
 h1 {
     margin: 0;
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family:"Playfair Display", roboto;
 }
 
 h2 {
     margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    font-family:"Playfair Display", roboto;
 }
 
 h3 {
+    font-weight: 500;
     margin: 0;
+    font-family:"Playfair Display", roboto;
+}
+
+p {
+    font-weight: 300;
 }
