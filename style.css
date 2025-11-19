@@ -14,18 +14,18 @@ body {
 }
 
 .aboutMeSection::before {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  background: #0891B2;
-  left: 0;
-  box-shadow: 0px 2px 2px rgb(201, 200, 200);
-  transform: skew(0, -10deg);
-  transform-origin: top left;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background: #0891B2;
+    left: 0;
+    box-shadow: 0px 2px 2px rgb(201, 200, 200);
+    transform: skew(0, -10deg);
+    transform-origin: top left;
 }
 
 .aboutMeImageContainer {
@@ -190,4 +190,71 @@ h3 {
 
 p {
     font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .aboutMeSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transform-origin: left;
+        margin-bottom: 0px;
+    }
+
+    .aboutMeTextContainer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        margin-top: 90px;
+        margin-right: 80px;
+        margin-bottom: 30px;
+        margin-left: 80px;
+        width: 70%;
+        height: 380px;
+        background-color: white;
+        box-shadow: 1px 1px 3px rgb(151, 150, 150);
+        translate: 0px -330px;
+        
+    }
+
+    .aboutMeImageContainer {
+        height: 350px;
+        width: 45%;
+        background-image: url("static/att.TljSoHLuw1gIDUxyTUTq-3rtvFAIwv9emAAwRFE_P4k.JPG");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        margin-left: 35px;
+        margin-top: 10px;
+        color: white;
+        justify-content: center;
+        box-shadow: 1px 1px 4px rgb(151, 150, 150);
+        z-index: 1;
+        float: left;
+    }
+    .aboutMeImageContainer>h1 {
+        z-index: 2;
+        translate: 200px -260px;
+    }
+
+    .aboutMeSection::before {
+        content: '';
+        display: block;
+        height: 45%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        background: #0891B2;
+        left: 0;
+        box-shadow: 0px 2px 2px rgb(201, 200, 200);
+        transform: skew(0, -14deg);
+        transform-origin: top left;
+    }
+
 }
