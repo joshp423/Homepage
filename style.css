@@ -43,11 +43,6 @@ body {
     box-shadow: 1px px 4px rgb(151, 150, 150);
 }
 
-.blockTablet {
-
-
-}
-
 .aboutMeTextContainer {
     display: flex;
     flex-direction: column;
@@ -197,7 +192,7 @@ p {
     font-weight: 300;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
 
     .aboutMeSection {
         padding-top: 30px;
@@ -298,6 +293,149 @@ p {
     .contactImageContainer>img {
         height: auto;
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .aboutMeSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transform-origin: left;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+
+    .aboutMeSection::before {
+        content: '';
+        display: block;
+        height: 53%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        background: #0891B2;
+        left: 0;
+        box-shadow: 0px 2px 2px rgb(201, 200, 200);
+        transform: skew(0, -32deg);
+        transform-origin: top left;
+    }
+    .aboutMeImageContainer {
+        height: 570px;
+        width: 80%;
+        background-image: url("static/att.TljSoHLuw1gIDUxyTUTq-3rtvFAIwv9emAAwRFE_P4k.JPG");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: white;
+        justify-content: center;
+        box-shadow: 1px 1px 4px rgb(151, 150, 150);
+        position: relative;
+    }
+
+    .aboutMeImageContainer>h1 {
+        font-size:70px;
+        z-index: 4;
+        translate: 0px;
+    }
+
+    .aboutMeTextContainer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 40px;
+        margin: 0px 20px 0px 20px;
+        width: 100%;
+        background-color: white;
+        translate: 0px 0px;
+        box-shadow: none;
+    }
+
+    .aboutMeTextContainer>h2 {
+        font-size: 50px;
+    }
+
+    .aboutMeTextContainer>p {
+        font-size: 27px;
+    }
+
+    .blockTablet {
+        display: none;
+    }
+
+    .aboutMeLogosContainer { 
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 0px
+
+    }
+
+    .aboutMeLogosContainer>img {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .myWorkSection {
+        margin: 400px 0px 0px 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .myWorkSection>h2 {
+        justify-self: center;
+        font-size: 48px;
+    }
+    
+    .projectsSection {
+        display: grid;
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .contactSection {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap: 70px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .contactContent {
+        padding: 20px;
+        
+    }
+    .contactContent>h2 {
+        justify-self: center;
+        font-size: 55px;
+    }
+
+    .contactContent>p {
+        font-size: 30px;
+    }
+
+    .contactLogos {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .contactLogos>img {
+        height: 50px;
+    }
+
+    .contactImageContainer {
+        height: 100%;
+        background-size:auto;
     }
 
 }
