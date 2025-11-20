@@ -401,6 +401,14 @@ p {
         margin-bottom: 80px;
     }
 
+    .projectDiv {
+        grid-template-rows: 4fr 1fr;
+    }
+
+    .projectScreenshot>h1 {
+        font-size: 50px;
+    }
+
     .contactSection {
         display: flex;
         flex-direction: column;
